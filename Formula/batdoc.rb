@@ -1,8 +1,8 @@
 class Batdoc < Formula
   desc "cat(1) for doc, docx, xls, xlsx, pptx, and pdf -- renders to markdown with bat"
   homepage "https://github.com/daemonp/batdoc"
-  url "https://github.com/daemonp/batdoc/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "1a288cde23cf5d8ce2f14d8e7b0e0108335b898fea7b55e93fdcc31e683b317d"
+  url "https://github.com/daemonp/batdoc/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "2db947984e2fa83ed9b74e1e9cf5b1404878d0ec9d0f7db996c5d74fe564655e"
   license "MIT"
   head "https://github.com/daemonp/batdoc.git", branch: "master"
 
