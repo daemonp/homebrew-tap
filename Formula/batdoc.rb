@@ -1,8 +1,8 @@
 class Batdoc < Formula
   desc "cat(1) for doc, docx, xls, xlsx, pptx, and pdf -- renders to markdown with bat"
   homepage "https://github.com/daemonp/batdoc"
-  url "https://github.com/daemonp/batdoc/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "940b134b2059188a9dda5160b680f58244faf90001fe1d032e1c2ca7cd753c97"
+  url "https://github.com/daemonp/batdoc/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "408bfaed98dce5617a2d668801ceba56b4df4c21a8390571b6945fd435524420"
   license "MIT"
   head "https://github.com/daemonp/batdoc.git", branch: "master"
 
@@ -10,6 +10,7 @@ class Batdoc < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    man1.install "target/man/batdoc.1"
   end
 
   test do
